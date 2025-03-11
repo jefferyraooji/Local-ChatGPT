@@ -2,7 +2,7 @@ import os
 from llama_cpp import Llama
 
 # Set model path (Ensure you have a GGUF model downloaded)
-MODEL_PATH = "models/llama-7b.gguf"
+MODEL_PATH = "models/llama-2-7b.Q4_K_M.gguf"
 
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model file not found: {MODEL_PATH}")
